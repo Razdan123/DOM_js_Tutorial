@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            font-size: 30px;
+            /* // background-color: aqua; */
+            margin: 65px 40px 40px 40px;
+        }
+
+        .wrapper {
+            border: 1px solid black;
+            position: absolute;
+            left: 22px;
+            top: 15%;
+            background: rgb(236, 115, 115);
+            height: 400px;
+            width: 800px;
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 20px;
+            background: rgb(255, 255, 255);
+            color: black;
+        }
+
+        button:hover {
+            background: #000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h2 id="heading" >This is HTML DOM Document</h2>
+            <ol id="olist">Below is the list of HTML Objects: -
+                <li class="list" >anchor</li>
+                <li class="list" >attrbutes</li>
+                <li class="list" >reset</li>
+                <li class="list" >submit</li>
+            </ol>
+        </div>
+
+        <!-- local/Session storage part-->
+ <h2>I live in: <span id="country"></span> </h2>
+       
+
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result"></div>
+        
+
+        <!-- Add event listener method -->
+
+        <button id="myBtn">Ask Me Date</button>
+        <p id="demo"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
